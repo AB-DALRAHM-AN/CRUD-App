@@ -5,12 +5,9 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          {/* <Link className="navbar-brand" to="/#">
+          <Link className="navbar-brand" to="/#">
             Logo
-          </Link> */}
-          <a className="navbar-brand" href="/#">
-            Logo
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,20 +22,14 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                {/* <Link className="nav-link active" aria-current="page" to="/#">
+                <Link className="nav-link active" aria-current="page" to="/#">
                   Home
-                </Link> */}
-                <a className="nav-link" href="/#">
-                  Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                {/* <Link className="nav-link" to="about">
+                <Link className="nav-link" to="about">
                   About
-                </Link> */}
-                <a className="nav-link" href="/about">
-                  About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

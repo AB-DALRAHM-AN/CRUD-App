@@ -1,11 +1,15 @@
 * {
   box-sizing: border-box;
 }
+.sidebar {
+  height: 100vh;
+}
 .sidebar ul {
   list-style: none;
   background-color: #f8f9fa;
-  height: 100vh;
-  padding: 20px
+  height: 100%;
+  margin: 0;
+  padding: 10px;
 }
 .sidebar li {
   font-size: 20px;

@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -9,4 +7,12 @@ body {
 }
 .App {
   text-align: center;
+  height: 100vh;
+}
+.App .row {
+  margin: 0;
+  padding: 0;
+}
+.App .row .col-2 {
+  padding: 0;
 }

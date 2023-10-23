@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
-import { Route, Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
-//Pages
+// components
 import Navbar from './components/nav';
 import Sidebar from './components/sidebar';
+//Pages
+import Home from './pages/home';
+import About from './pages/About';
+import Products from './pages/products';
+import Categories from './pages/categories';
+import Add from './pages/add';
+import Edit from './pages/edit';
+import View from './pages/view';
 
 
 function App() {
@@ -17,7 +25,15 @@ function App() {
             <Sidebar/>
           </div>
           <div className='col-10'>
-            test2
+            <Routes>
+              <Route path='/' element={<Home/>} />
+              <Route path='about' element={<About/>} />
+              <Route path='products' element={<Products/>} />
+              <Route path='products/add' element={<Add/>} />
+              <Route path='products/:productID' element={<Edit/>} />
+              <Route path='products/:productID' element={<View/>} />
+              <Route path='categories' element={<Categories/>} />
+            </Routes>
           </div>
         </div>
       </>
