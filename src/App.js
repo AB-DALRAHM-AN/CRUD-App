@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-
 // components
 import Navbar from './components/nav';
 import Sidebar from './components/sidebar';
@@ -30,8 +29,7 @@ function App() {
               <Route path='about' element={<About/>} />
               <Route path='products' element={<Products/>} />
               <Route path='products/add' element={<Add/>} />
-              <Route path='products/:productID' element={<Edit/>} />
-              <Route path='products/:productID' element={<View/>} />
+              <Route path='products/view/:productID' element={<View/>} />
               <Route path='categories' element={<Categories/>} />
             </Routes>
           </div>

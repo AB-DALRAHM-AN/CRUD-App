@@ -1,6 +1,8 @@
 function Edit() {
   return(
-    <h2>Edit Product</h2>
+    <>
+      <h2>Edit Page</h2>
+    </>
   )
 }
 
