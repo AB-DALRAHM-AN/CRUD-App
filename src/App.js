@@ -8,7 +8,6 @@ import Sidebar from './components/sidebar';
 import Home from './pages/home';
 import About from './pages/About';
 import Products from './pages/products';
-import Categories from './pages/categories';
 import Add from './pages/add';
 import Edit from './pages/edit';
 import View from './pages/view';
@@ -31,7 +30,6 @@ function App() {
               <Route path='products/add' element={<Add/>} />
               <Route path='products/view/:productID' element={<View/>} />
               <Route path='products/edit/:productID' element={<Edit/>} />
-              <Route path='categories' element={<Categories/>} />
             </Routes>
           </div>
         </div>

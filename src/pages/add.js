@@ -5,6 +5,7 @@ function Add() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState(0);
+  const [category, setCategory] = useState("Smart Phones");
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -12,6 +13,7 @@ function Add() {
       method: "POST",
       body: JSON.stringify({
         title: title,
+        category: category,
         description: description,
         price: price,
       }),
@@ -24,6 +26,7 @@ function Add() {
       })
       .then((data) => {
         setTitle("");
+        setCategory("");
         setDescription("");
         setPrice(0);
         Swal.fire("Added Succesfuly!");
@@ -43,6 +46,23 @@ function Add() {
             id="title"
             onChange={(e) => setTitle(e.target.value)}
           />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="Category" className="form-label">
+            Category
+          </label>
+          <select
+            name="cars"
+            id="cars"
+            onChange={(e) => {
+              setCategory(e.target.value);
+            }}
+          >
+            <option value="smart Phones">Smart Phones</option>
+            <option value="men's clothing">men's clothing</option>
+            <option value="women's clothing">women's clothing</option>
+            <option value="electronics">Electronics</option>
+          </select>
         </div>
         <div className="mb-3">
           <label htmlFor="description" className="form-label">

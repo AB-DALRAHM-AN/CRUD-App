@@ -58,6 +58,7 @@ function Products() {
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Price</th>
+            <th scope="col">Category</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -67,6 +68,7 @@ function Products() {
               <tr key={product.id}>
                 <td>{product.title.slice(0, 20)}</td>
                 <td>{product.price}</td>
+                <td>{product.category}</td>
                 <td>
                   <Link
                     type="button"

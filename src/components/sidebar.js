@@ -9,9 +9,6 @@ function Sidebar() {
         <li>
           <Link to="/products">Products</Link>
         </li>
-        <li>
-          <Link to="/categories">Categories</Link>
-        </li>
       </ul>
       </div>
     </>

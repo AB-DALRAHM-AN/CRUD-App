@@ -1,16 +1,32 @@
 {
   "products": [
     {
-      "title": "fdfd",
-      "description": "fdfd",
-      "price": "90",
-      "id": 1
+      "title": "Iphone 12 pro",
+      "category": "Smart Phones",
+      "description": "lkdjflkjalkfj",
+      "price": "400$",
+      "id": 2
     },
     {
-      "title": "Iphone 16 pro max",
-      "description": "this is my second project on react ",
-      "price": "1000$",
-      "id": 2
+      "title": "Iphone 12",
+      "category": "Smart phones",
+      "description": "lksjfklfjkljadsfjjsf",
+      "price": "2000$",
+      "id": 3
+    },
+    {
+      "title": "T-Shirt ",
+      "category": "men's clothing",
+      "description": "lkajfkljklj",
+      "price": "300$",
+      "id": 4
+    },
+    {
+      "title": "akljf",
+      "category": "Smart Phones",
+      "description": "lajdfk",
+      "price": "90",
+      "id": 6
     }
   ]
 }

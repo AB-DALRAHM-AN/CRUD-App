@@ -25,8 +25,11 @@ function View() {
       <div className="card" style={{ width: "18rem" }}>
         <div className="card-body">
           <h5 className="card-title">{product.title}</h5>
+          <h6 className="card-subtitle mb-2 text-muted">
+            Category: {product.category}
+          </h6>
           <p className="card-text">{product.description}</p>
-          <span>Price: {product.price}</span>
+          <p className="card-text">Price: {product.price}</p>
         </div>
       </div>
     </>
